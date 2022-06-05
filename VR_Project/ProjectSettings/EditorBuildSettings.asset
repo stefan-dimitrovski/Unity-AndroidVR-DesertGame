@@ -6,7 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 714024395d7757141aeccac4e8d720af
+  - enabled: 1
     path: Assets/Scenes/VRDesert.unity
     guid: 6c8e135a3f351414bbeaa99b308d830d
+  - enabled: 1
+    path: Assets/Scenes/QuitMenu.unity
+    guid: bfda6307c716fb1429c7bdc7e27f6b89
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1bfe7d5cb5aa315469458240328f2867, type: 2}
