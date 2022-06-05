@@ -1,18 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndGameEvent : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameHandler GH;
+
     void Start()
     {
-        
+        GH = GameObject.Find("Score").GetComponent<GameHandler>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.tag == "Finish" && GH.Coins == 5)
+        {
+            SceneManager.LoadScene("QuitMenu");
+        }
+        else if (other.tag == "Respawn")
+        {
+            SceneManager.LoadScene("QuitMenu");
+        }
     }
 }
